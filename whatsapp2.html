@@ -11,27 +11,39 @@
     <div class="container-contact100">
       <div class="wrap-contact100">
         <form class="contact100-form validate-form" id="whatsapp">
-          <span class="contact100-form-title">Konfirmasi Pemesanan</span>
+          <span class="contact100-form-title">Form Isian Undangan Pernikahan </span>
           <input class="tujuan" type="hidden" id="noAdmin" />
           <div class="wrap-input100">
-            <span class="label-input100">Nama Pemesan</span>
+            <span class="label-input100">Pengantin Putra</span>
             <label>
-              <input class="input100 nama" type="text" placeholder="Diisi nama Pemesan Undangan" />
+              <input class="input100 nama" type="text" placeholder="Nama Pengantin/Nama Orang Tua/Alamat Singkat" />
             </label>
             <span class="focus-input100"></span>
           </div>
           <div class="wrap-input100">
-            <span class="label-input100">Nomor WhatsApp</span>
+            <span class="label-input100">Pengantin Putri</span>
             <label>
-              <input class="input100 nowhatsapp" type="text" placeholder="08xxxxxxxxxx" />
+              <input class="input100 nowhatsapp" type="text" placeholder="Nama Pengantin/Nama Orang Tua/Alamat Singkat" />
             </label>
             <span class="focus-input100"></span>
           </div>
           <div class="wrap-input100">
-            <span class="label-input100">Alamat</span>
+            <span class="label-input100">Akad Nikah/Ijab Kabul</span>
             <label>
-              <textarea class="input100 alamat" placeholder="Masukkan alamat Pemesan"></textarea>
+              <input class="input100 nowhatsapp" type="text" placeholder="Hari/Tanggal/Jam/Tempat" />
             </label>
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100">
+            <span class="label-input100">Undangan Acara</span>
+            <label>
+              <textarea class="input100 alamat" placeholder="Hari/Tanggal/Jam/Tempat"></textarea>
+            </label>
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100">
+            <span class="label-input100">Pemangku Hajat</span>
+            <label> <input class="input100 nowhatsapp" type="text" placeholder="Untuk di isi pada HORMAT KAMI:" /> </label>
             <span class="focus-input100"></span>
           </div>
           <div class="container-contact100-form-btn">
@@ -64,13 +76,25 @@
           alert("Silahkan tulis " + ph);
           $("#whatsapp .nama").focus();
           return false;
-        } else if ($("#whatsapp .nowhatsapp").val() == "") {
+        }  } else if ($("#whatsapp .nowhatsapp").val() == "") {
           // Cek Whatsapp
           ph = $("#whatsapp .nowhatsapp").attr("placeholder");
           alert("Silahkan tulis " + ph);
           $("#whatsapp .nowhatsapp").focus();
           return false;
-        } else if ($("#whatsapp .alamat").val() == "") {
+        }else if ($("#whatsapp .ijab").val() == "") {
+          // Cek Whatsapp
+          ph = $("#whatsapp .ijab").attr("placeholder");
+          alert("Silahkan tulis " + ph);
+          $("#whatsapp .ijab").focus();
+          return false;
+        } else if ($("#whatsapp .ijab").val() == "") {
+          // Cek Whatsapp
+          ph = $("#whatsapp .ijab").attr("placeholder");
+          alert("Silahkan tulis " + ph);
+          $("#whatsapp .ijab").focus();
+          return false;
+        }else if ($("#whatsapp .alamat").val() == "") {
           // Cek Alamat
           ph = $("#whatsapp .alamat").attr("placeholder");
           alert("Silahkan tulis " + ph);
