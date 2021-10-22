@@ -18,3 +18,9 @@ section {
   color: black;
   position: relative;
 }
+.gallery-img {
+  width: 100%;
+}
+#gallery .row > * {
+  padding: 2px;
+}
